@@ -19,7 +19,7 @@ export default function Home({ posts }) {
 
 export async function getStaticProps() {
   // get posts from our api
-  const res = await fetch("http://localhost:1337/posts");
+  const res = await fetch("http://localhost:1337/api/posts");
   const posts = await res.json();
 
   return {
